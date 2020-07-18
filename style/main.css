@@ -126,6 +126,10 @@ h2{
   overflow-x:hidden;
   overflow-y:auto;
   }
+ul{
+  display:table;
+  margin:0 auto;
+}
 
 /* Tooltip styling - https://codepen.io/yjose/ */
 [tooltip]{

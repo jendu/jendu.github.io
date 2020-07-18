@@ -1,4 +1,4 @@
-# jendu.github.io
+# https://jendu.github.io/
 
 My personal website coded from scratch :-)
 
