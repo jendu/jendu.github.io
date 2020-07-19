@@ -38,6 +38,13 @@ function copyright(){
   document.getElementById("footer").innerHTML+=year;
 }
 
+function mobile(){
+  if(/Mobi/.test(navigator.userAgent)){
+    document.getElementsByClassName("space")[0].style.display="none";
+  }
+}
+
 updateClock();
 age();
 copyright();
+mobile();

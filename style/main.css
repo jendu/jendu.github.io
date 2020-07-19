@@ -223,6 +223,7 @@ ul{
     }
   }
 .space{
+  display:inline;
   position:absolute;
   width:400vw;
   height:400vh;
