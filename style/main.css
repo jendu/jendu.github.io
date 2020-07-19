@@ -3,7 +3,7 @@
  *
  * Credits:
  * Tooltip styling - https://codepen.io/yjose/
- * SVG animated background - https://alancrissey.com/
+ * SVG animated background - https://codepen.io/TheRealAlan/
  */
 html{
   height:100%;
@@ -226,7 +226,7 @@ ul{
   opacity:1;
   }
 
-/* SVG animated background - https://alancrissey.com/ */
+/* SVG animated background - https://codepen.io/TheRealAlan/ */
 @keyframes spin{
   from{
     transform:rotate(0deg);
