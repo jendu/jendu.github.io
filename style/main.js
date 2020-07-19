@@ -41,6 +41,16 @@ function copyright(){
 function mobile(){
   if(/Mobi/.test(navigator.userAgent)){
     document.getElementsByClassName("space")[0].style.display="none";
+    document.body.style.margin="0px";
+    document.getElementById("inner").style.width="100%";
+    document.getElementById("content").style.height="auto";
+    document.getElementById("content").style.width="80vw";
+    document.getElementById("fill").style.height="56vh";
+    document.getElementById("fill").style.border="1px solid rgba(50,6,62,.2)";
+    document.getElementById("fill").style.borderRadius="15px";
+    document.getElementById("fill").style.overflowY="auto";
+    document.getElementById("fill").style.overflowX="hidden";
+    document.getElementById("footer").style.marginTop="9px";
   }
 }
 
