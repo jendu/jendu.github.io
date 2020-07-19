@@ -19,7 +19,6 @@ body{
   overflow:hidden;
   color:#E6E6E6;
   font-family:Calibri;
-  font-size:15px;
   }
 ::-moz-selection{
   color:#FFFFFF;
@@ -134,6 +133,7 @@ h2{
 #fill{
   padding-left:10px;
   padding-right:10px;
+  font-size:15px;
   }
 #collection{
   height:600px;
