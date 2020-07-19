@@ -18,7 +18,7 @@ body{
   height:100%;
   overflow:hidden;
   color:#E6E6E6;
-  font-family:Calibri;
+  font-family:Calibri,'Arial',san-serif;
   }
 ::-moz-selection{
   color:#FFFFFF;

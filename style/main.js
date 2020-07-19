@@ -39,7 +39,7 @@ function copyright(){
 }
 
 function mobile(){
-  if(/Mobi/.test(navigator.userAgent)){
+  if(/Mobi|Android|kindle|ipad|tablet/i.test(navigator.userAgent)){
     document.getElementsByClassName("space")[0].style.display="none";
     document.body.style.margin="0px";
     document.getElementById("inner").style.width="100%";
