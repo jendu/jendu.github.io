@@ -22,6 +22,7 @@ function updateClock(){
 }
 
 function age() {
+  if(document.getElementsByClassName("age")!=null){
     var now=new Date();
     var birthDate = new Date("12/26/1997");
     var age=now.getFullYear()-birthDate.getFullYear();
@@ -30,6 +31,7 @@ function age() {
       age=age-1;
     }
     document.getElementsByClassName("age")[0].innerHTML=age;
+  }
 }
 
 function copyright(){

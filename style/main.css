@@ -94,6 +94,9 @@ body{
 #fill{
   padding:10px 25px 10px 25px;
   font-size:15px;
+  height:400px;
+  overflow-y:auto;
+  overflow-x:hidden;
   }
 #copyright{
   float:left;
@@ -225,6 +228,7 @@ ul{
     }
   #fill{
     height:auto;
+    overflow:hidden;
     border:1px solid rgba(50,6,62,0.2);
     border-radius:15px;
     }
