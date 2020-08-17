@@ -16,7 +16,7 @@ function updateClock(){
   secs=secs<=9?"0"+secs:secs;
 
   date+=" "+hours+':'+mins+':'+secs;
-  document.getElementsByClassName("currentTime")[0].innerHTML=date;
+  document.getElementsByClassName("clock")[0].innerHTML=date;
 
   setTimeout(updateClock,1000);
 }
@@ -35,22 +35,23 @@ function age() {
 function copyright(){
   var now=new Date();
   var year=now.getFullYear();
-  document.getElementById("footer").innerHTML+=year;
+  document.getElementById("copyright").innerHTML+=year;
 }
 
 function mobile(){
-  if(/Mobi|Android|kindle|ipad|tablet/i.test(navigator.userAgent)){
-    document.body.style.margin="0px";
-    document.getElementById("inner").style.width="100%";
-    document.getElementById("content").style.height="auto";
-    document.getElementById("content").style.width="80vw";
-    document.getElementById("fill").style.height="56vh";
-    document.getElementById("fill").style.border="1px solid rgba(50,6,62,.2)";
-    document.getElementById("fill").style.borderRadius="15px";
-    document.getElementById("fill").style.overflowY="auto";
-    document.getElementById("fill").style.overflowX="hidden";
-    document.getElementById("footer").style.marginTop="9px";
-  }
+  // if(/Mobi|Android|kindle|iPad|iPhone|tablet/i.test(navigator.userAgent)){
+  //   document.body.style.margin="0px";
+  //   document.getElementById("inner").style.width="100%";
+  //   document.getElementById("menu").style.width="60vw";
+  //   document.getElementById("content").style.height="auto";
+  //   document.getElementById("content").style.width="80vw";
+  //   document.getElementById("fill").style.height="40vh";
+  //   document.getElementById("fill").style.border="1px solid rgba(50,6,62,.2)";
+  //   document.getElementById("fill").style.borderRadius="15px";
+  //   document.getElementById("fill").style.overflowY="auto";
+  //   document.getElementById("fill").style.overflowX="hidden";
+  //   document.getElementById("footer").style.marginTop="9px";
+  // }
 }
 
 updateClock();
