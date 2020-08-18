@@ -159,7 +159,7 @@ a,a:visited{
   text-decoration:none;
   }
 #fill a[target="_blank"]::after{
-  content:url("icon/externallink.png");
+  content:url("icon/externallink.svg");
   position:relative;
   }
 a:hover{
