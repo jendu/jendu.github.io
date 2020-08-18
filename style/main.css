@@ -23,9 +23,13 @@ body{
   font-size:15px;
   font-family:Calibri,'Arial',san-serif;
   }
-::selection{
+/* ::selection{
   color:#FFFFFF;
   background-color:rgba(153,118,187,0.99);
+  } */
+  ::selection{
+  color:#FFFFFF;
+  background:rgba(161,124,196,0.8);
   }
 ::-webkit-scrollbar{
   width:8px;
