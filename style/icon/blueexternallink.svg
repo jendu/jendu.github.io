@@ -1,0 +1,22 @@
+<svg width="14" height="11" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="16" height="13" id="canvas_background" fill="none"/>
+ </g>
+
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_14">
+   <g stroke="null" transform="matrix(1.0067884437211876,0,0,0.9947692861130089,-0.06955422660782129,-0.024261135805588196) " id="svg_7">
+    <svg stroke="null" id="svg_9" height="288" width="288">
+     <rect stroke="null" id="svg_10" fill="none" y="-1" x="-1" height="13" width="16"/>
+     <g stroke="null" id="svg_11" class="color000 svgShape" fill="#000000">
+      <path stroke="#000000" id="svg_12" class="colorStroke000 svgStroke" d="m8.5,2.47656l-2.19922,0c-0.60938,0 -1.10156,0.49219 -1.10156,1.09766l0,5.5c0,0.60937 0.49218,1.10156 1.10156,1.10156l5.5,0c0.60547,0 1.09766,-0.49219 1.09766,-1.10156l0,-2.19922m-2.19922,-5.5l3.30078,0m0,0l0,3.30078m0,-3.30078l-5.5,5.5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+      <path stroke="#8cbbff" id="svg_13" class="colorStrokeFF84AB svgStroke" d="m7.73047,1.71875l-2.19922,0c-0.60937,0 -1.10156,0.49219 -1.10156,1.10156l0,5.5c0,0.60547 0.49219,1.09766 1.10156,1.09766l5.5,0c0.60547,0 1.09766,-0.49219 1.09766,-1.09766l0,-2.20312m-2.19922,-5.5l3.30078,0m0,0l0,3.30078m0,-3.30078l-5.5,5.5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+     </g>
+    </svg>
+   </g>
+  </g>
+
+ </g>
+</svg>

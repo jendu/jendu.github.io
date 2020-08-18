@@ -159,10 +159,15 @@ a,a:visited{
   text-decoration:none;
   }
 #fill a[target="_blank"]::after{
-  content:url("icon/externallink.svg");
+  content:url("icon/pinkexternallink.svg");
   position:relative;
   }
+/* #fill a[target="_blank"]:hover::after{
+  content:url("icon/blueexternallink.svg");
+  position:relative;
+  } */
 a:hover{
+    transition:all 0.3s ease-in-out;
   color:#8CBBFF;
   }
 h1{
