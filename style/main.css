@@ -249,7 +249,7 @@ ul li{
   padding-left:0.2em;
   }
 ul li ul li{
-  padding-left:3em;
+  padding:0.25em 0 0 3.5em;
   }
 ul li::before{
   content:"\27A5";
@@ -260,11 +260,10 @@ ul li::before{
   text-shadow:1px 1px 0px #57FFD8;
   }
 ul li ul li::before{
-  content:"\1F892";
+  content:"\2023";
   margin-left:-1em;
   position:relative;
   color:#FF84AB;
-  font-size:18px;
   text-shadow:1px 1px 0px #57FFD8;
   }
 @media only screen and (max-width:800px),only screen and (max-height:700px) {
