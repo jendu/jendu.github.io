@@ -50,9 +50,8 @@ function enlargeImg(){
   }
 }
 function openImgInNewWindow(img) {
-   var imgWindow=window.open();
-   imgWindow.document.write("<html><head><title>Jennifer Du – Full-size Image</title></head><body><img src="+img.src+" alt='Full-size image'></body></html>");
-   imgWindow.document.close();
+  var imgWindow=window.open(img.src);
+  imgWindow.document.close();
 }
 
 function age(){
