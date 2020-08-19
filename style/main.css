@@ -167,7 +167,7 @@ tbody tr td{
 /* Layout elements */
 #outer{
   display:table;
-  position:absolute;
+  position:fixed;
   height:100%;
   width:100%
   }
