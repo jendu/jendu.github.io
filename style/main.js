@@ -27,7 +27,23 @@ function copyright(){
   document.getElementById("copyright").innerHTML+=year;
 }
 
-function enlarge(){
+function showButton(){
+  var scrollToTopBtn=document.getElementsByClassName("scrollToTop")[0];
+  document.getElementById("fill").onscroll=function(){
+    if(document.getElementById("fill").scrollTop>20) {
+      scrollToTopBtn.style.visibility="visible";
+      scrollToTopBtn.style.opacity="1";
+    }else{
+      scrollToTopBtn.style.visibility="hidden";
+      scrollToTopBtn.style.opacity="0";
+    }
+  };
+}
+function scrollToTop(){
+  document.getElementById("fill").scrollTop=0;
+}
+
+function enlargeImg(){
   var images=document.getElementById("fill").getElementsByTagName('img');
   for(var i=0;i<images.length;i++){
     images[i].addEventListener('click',function(){openImgInNewWindow(this)},false);
@@ -36,6 +52,7 @@ function enlarge(){
 function openImgInNewWindow(img) {
    var imgWindow=window.open();
    imgWindow.document.write("<html><head><title>Jennifer Du – Full-size Image</title></head><body><img src="+img.src+" alt='Full-size image'></body></html>");
+   imgWindow.document.close();
 }
 
 function age(){
@@ -51,8 +68,11 @@ function age(){
 
 updateClock();
 copyright();
+if(document.getElementsByClassName("scrollToTop").length>0){
+  showButton();
+}
 if(document.getElementById("fill").getElementsByTagName('img')){
-  enlarge();
+  enlargeImg();
 }
 if(document.getElementsByClassName("age").length>0){
   age();
