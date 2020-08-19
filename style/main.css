@@ -8,11 +8,13 @@
 
 /* Global elements */
 html{
+  margin:0px;
   min-height:100%;
   width:100%;
   overflow:hidden;
   }
 body{
+  margin:0px;
   background-color:#D0718F;
   background-image:linear-gradient(#6D55A7,#D0718F);
   background-size:cover;
