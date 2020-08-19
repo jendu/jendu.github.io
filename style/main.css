@@ -329,6 +329,7 @@ tbody tr td{
     width:90%;
     }
   #fill{
+    width:auto;
     height:auto;
     overflow:hidden;
     border:1px solid rgba(50,6,62,0.2);
