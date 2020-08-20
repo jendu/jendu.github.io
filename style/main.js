@@ -32,9 +32,7 @@ function copyright(){
 function showButton(){
   var scrollToTopBtn=document.getElementsByClassName("scrollToTop")[0];
   if(isMobile){
-    scrollToTopBtn.innerHTML="<a>TOP</a>";
     window.onscroll=function(){
-      console.log("mobile sCROLL");
       if(window.pageYOffset>70) {
         scrollToTopBtn.style.visibility="visible";
         scrollToTopBtn.style.opacity="1";
