@@ -1,3 +1,5 @@
+var isMobile=window.getComputedStyle(document.getElementsByTagName("html")[0], null).getPropertyValue("overflow-y").localeCompare("auto")==0;
+
 function updateClock(){
   var now=new Date();
 
@@ -29,18 +31,36 @@ function copyright(){
 
 function showButton(){
   var scrollToTopBtn=document.getElementsByClassName("scrollToTop")[0];
-  document.getElementById("fill").onscroll=function(){
-    if(document.getElementById("fill").scrollTop>20) {
-      scrollToTopBtn.style.visibility="visible";
-      scrollToTopBtn.style.opacity="1";
-    }else{
-      scrollToTopBtn.style.visibility="hidden";
-      scrollToTopBtn.style.opacity="0";
-    }
-  };
+  if(isMobile){
+    scrollToTopBtn.innerHTML="<a>TOP</a>";
+    window.onscroll=function(){
+      console.log("mobile sCROLL");
+      if(window.pageYOffset>70) {
+        scrollToTopBtn.style.visibility="visible";
+        scrollToTopBtn.style.opacity="1";
+      }else{
+        scrollToTopBtn.style.visibility="hidden";
+        scrollToTopBtn.style.opacity="0";
+      }
+    };
+  }else{
+    document.getElementById("fill").onscroll=function(){
+      if(document.getElementById("fill").scrollTop>20) {
+        scrollToTopBtn.style.visibility="visible";
+        scrollToTopBtn.style.opacity="1";
+      }else{
+        scrollToTopBtn.style.visibility="hidden";
+        scrollToTopBtn.style.opacity="0";
+      }
+    };
+  }
 }
 function scrollToTop(){
-  document.getElementById("fill").scrollTop=0;
+  if(isMobile){
+    window.scrollTo(0,0);
+  }else{
+    document.getElementById("fill").scrollTop=0;
+  }
 }
 
 function enlargeImg(){
