@@ -90,7 +90,7 @@ h2{
   letter-spacing:5px;
   font-size:14px;
   }
-h2:before,h2:after{
+h2:before,h2::after{
   content:"";
   border-top:1px rgba(255,255,255,0.25) dashed;
   width:25%;
@@ -98,7 +98,7 @@ h2:before,h2:after{
   margin:4px 10px;
   display:inline-block;
   }
-h2:after{
+h2::after{
   margin-left:3px;
   }
 h3,h3 a{
@@ -217,7 +217,7 @@ tbody tr td{
   color:#FFFFFF;
   text-shadow:2px 2px 1px #811CCE;
   }
-#menu a:after{
+#menu a::after{
   transition:all 0.5s ease-in-out;
   content:"";
   width:0px;
@@ -225,7 +225,7 @@ tbody tr td{
   display:block;
   background-color:#752EAB;
   }
-#menu a:hover:after{
+#menu a:hover::after,#menu a:active::after{
   width:100%;
   }
 #content{
@@ -288,12 +288,6 @@ tbody tr td{
     content:url("icon/blueexternallink.svg");
     position:relative;
     } */
-#fill img{
-  filter:brightness(85%);
-  }
-#fill img:hover{
-  filter:brightness(100%);
-  }
 #footer{
   padding:10px;
   }
@@ -362,7 +356,7 @@ tbody tr td{
   h1{
     font-size:10vw;
     }
-  h2:before,h2:after{
+  h2:before,h2::after{
     width:10%;
     }
 }
