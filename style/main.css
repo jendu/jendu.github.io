@@ -297,6 +297,9 @@ tbody tr td{
   opacity:0.4;
   margin-top:15px;
   }
+#socials {
+  float:right;
+  }
 #socials img{
   max-height:33px;
   border-radius:15px;
