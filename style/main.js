@@ -62,7 +62,8 @@ function scrollToTop(){
 }
 
 function enlargeImg(){
-  var images=document.getElementById("fill").getElementsByTagName('img');
+  var images=document.getElementById("fill").getElementsByClassName('enlargeImg');
+  console.log(images);
   for(var i=0;i<images.length;i++){
     images[i].addEventListener('click',function(){openImgInNewWindow(this)},false);
   }
